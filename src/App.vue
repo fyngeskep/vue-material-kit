@@ -1,14 +1,19 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
+
+
 </script>
 
-<template>
-  <nav class="navbar navbar-expand-lg navbar-dark">
+<template id="page">
+  <nav id="nav" class="navbar navbar-expand-lg navbar-dark shadow p-3 mb-5 rounded">
+    <a class="navbar-brand" href="#">
+      <img height="40" src="/public/Photos/BS.png"/>
+    </a>
     <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/pierre">Pierre</RouterLink>
-    <RouterLink to="/lisa">Lisa</RouterLink>
+    <RouterLink to="/blog">Blog</RouterLink>
     <RouterLink to="/about">About</RouterLink>
+    <RouterLink to="/scroll">Scroll</RouterLink>
   </nav>
   <div class="container">
     <RouterView />
@@ -31,6 +36,7 @@ nav {
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
+  max-height: 40px;
 }
 
 .blank-header {
@@ -55,6 +61,7 @@ nav a {
   display: inline-block;
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
+  font-size: small;
 }
 
 nav a:first-of-type {

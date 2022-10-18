@@ -18,14 +18,14 @@ const router = createRouter({
       component: () => import("../views/AboutView.vue"),
     },
     {
-      path: "/pierre",
-      name: "pierre",
-      component: () => import("../views/PierresView.vue"),
+      path: "/blog",
+      name: "blog",
+      component: () => import("../views/BlogView.vue"),
     },
     {
-      path: "/lisa",
-      name: "lisa",
-      component: () => import("../views/LisasView.vue"),
+      path: "/scroll",
+      name: "scroll",
+      component: () => import("../views/TestScroll.vue"),
     },
   ],
 });
